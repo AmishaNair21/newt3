@@ -6,10 +6,10 @@
 - [x] Actually set up a database(vercel postgres)
 - [x] Attach database to ui
 - [x] Add authentication (w/ clerk)
-- [ ] Add image upload 
-- [] "taint" (server-only)
-- [] Use Next/Image component
-- [ ] Error Management (w/ sentry)
+- [x] Add image upload 
+- [x] "taint" (server-only)
+- [x] Use Next/Image component
+- [] Error Management (w/ sentry)
 - [ ] Routing/image page(parallel route)
 - [ ] delete button(w/ server actions)
 - [ ] Analyics(posthog)
