@@ -3,6 +3,7 @@ import { db } from "~/server/db";
 import { SignedIn, SignedOut } from "@clerk/nextjs";
 
 
+
 export const dynamic ="force-dynamic";
 
    async function Images(){
@@ -11,8 +12,8 @@ export const dynamic ="force-dynamic";
     <div className="flex flex-wrap gap-5">
      
     {
-      [...fetchedImages,...fetchedImages,...fetchedImages].map((image,index)=>(
-        <div key={image.id + "-" + index} className="w-48">
+      fetchedImages.map((image)=>(
+        <div key={image.id} className="w-48">
           <img src={image.url}/>
         </div>
       ))
@@ -35,6 +36,7 @@ export default async function HomePage() {
   </div>
 </SignedOut>
      <SignedIn>
+      
       <Images/>
      </SignedIn>
     </main>
